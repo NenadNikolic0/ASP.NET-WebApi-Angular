@@ -75,6 +75,8 @@
     <Content Include="angular-pib\src\app\app.component.html" />
     <Content Include="angular-pib\src\app\login\login.component.css" />
     <Content Include="angular-pib\src\app\login\login.component.html" />
+    <Content Include="angular-pib\src\app\login\sign-up\sign-up.component.css" />
+    <Content Include="angular-pib\src\app\login\sign-up\sign-up.component.html" />
     <Content Include="angular-pib\src\assets\bootstrap\bootstrap-grid.min.css" />
     <Content Include="angular-pib\src\assets\bootstrap\bootstrap.min.css" />
     <Content Include="angular-pib\src\favicon.ico" />
@@ -125,6 +127,8 @@
     <TypeScriptCompile Include="angular-pib\src\app\login\login.module.ts" />
     <TypeScriptCompile Include="angular-pib\src\app\login\login.service.spec.ts" />
     <TypeScriptCompile Include="angular-pib\src\app\login\login.service.ts" />
+    <TypeScriptCompile Include="angular-pib\src\app\login\sign-up\sign-up.component.spec.ts" />
+    <TypeScriptCompile Include="angular-pib\src\app\login\sign-up\sign-up.component.ts" />
     <TypeScriptCompile Include="angular-pib\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="angular-pib\src\environments\environment.ts" />
     <TypeScriptCompile Include="angular-pib\src\main.ts" />
