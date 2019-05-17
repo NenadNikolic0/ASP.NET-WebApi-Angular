@@ -19,7 +19,7 @@
           <input type="submit" class="btn btn-primary btn-size" value="SIGN IN"  />
           <div class="sign-up">
             <span>Forgot <a href="#">Username / Password?</a></span>
-            <span>Create an account? <a href="#">Sign up</a></span>
+            <span>Create an account? <a href="#" (click)="signUp();">Sign up</a></span>
           </div>
         </div>
 
@@ -31,3 +31,6 @@
   
 
 </div>
+
+
+<sign-up [displayModal]="displayModal" (modalClosed)="modalIsClosed($event)"></sign-up>

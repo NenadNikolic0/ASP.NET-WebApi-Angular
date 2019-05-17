@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 import { FormBuilder, Validators } from '@angular/forms';
 
@@ -12,6 +12,9 @@ import { LoginService } from './login.service';
 export class LoginComponent implements OnInit {
 
   public loginForm;
+
+ 
+  public displayModal: string = ""; 
 
   // Init validation property values 
   public formFieldsErrors = {
@@ -91,6 +94,22 @@ export class LoginComponent implements OnInit {
     this.formFieldsErrors.emptyEmail = false;
     this.formFieldsErrors.emptyPassword = false;
     this.formFieldsErrors.invalidEmail = false;
+  }
+
+
+  signUp() {
+    this.displayModal = "Open modal";
+  }
+
+  /**
+   * Function that receives string from sign up component and reset display modal flag 
+   * @param event (Received message from sign up component)
+   */
+  modalIsClosed(event) {
+    if (event == "SignUp modal closed") {
+      this.displayModal = "";
+      console.log('Modal is closed');
+    }
   }
 
 
