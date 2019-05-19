@@ -11,9 +11,10 @@ import { LoginService } from './login.service';
 })
 export class LoginComponent implements OnInit {
 
+  // Form group
   public loginForm;
 
- 
+  // Property for sending singal to child component
   public displayModal: string = ""; 
 
   // Init validation property values 
@@ -37,9 +38,11 @@ export class LoginComponent implements OnInit {
     return this.loginForm.controls;
   }
 
+  /**
+   * Function will execute on form submit
+   **/
   formSubmit() {
-    let message: String = this.loginSvc.getMessage();
-    console.log("Poruka iz servisa:", message);
+
   }
 
 
@@ -96,7 +99,9 @@ export class LoginComponent implements OnInit {
     this.formFieldsErrors.invalidEmail = false;
   }
 
-
+  /**
+   * If sign up link is clicked, set string property to 'open modal' and child component will detect user action
+   **/
   signUp() {
     this.displayModal = "Open modal";
   }
